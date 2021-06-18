@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Switch Statement
-        String gender = "da";
+        String gender = "Female";
         if (gender.equals("Male")) {
 
         } else if (gender.equals("Prefer_Not_Say")) {
