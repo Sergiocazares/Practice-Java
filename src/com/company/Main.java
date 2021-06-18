@@ -3,14 +3,12 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // Logical Operators
-        boolean isAdult = false;
-        boolean isStudent = false;
-        boolean isSergioMember = true;
-        System.out.println((!isAdult || isStudent) && !isSergioMember);
-        System.out.println(!isAdult);
-        String name = "Alex";
-        System.out.println(10 > 8 || 2 <= 2 && isAdult && name.contains("A"));
-
+        // If statements
+        int age = 17;
+        if (age > 18) {
+            System.out.println("Yay ... I am an adult");
+        } else if (age >= 16 && age <18) {
+            System.out.println("I am almost an adult");
+        }
     }
 }
