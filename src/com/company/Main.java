@@ -3,11 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // Arithmetic Operations
-        int addition = 10 + 2;
-        System.out.println(addition);
-        System.out.println(10 -2);
-        System.out.println(10 * 2);
-        System.out.println(10 % 2);
+        // Math
+        System.out.println(Math.abs(-10));
+        System.out.println(Math.max(6, 10));
+        System.out.println(Math.min(6, 10));
+        System.out.println(Math.pow(5.0, 2.0));
     }
 }
