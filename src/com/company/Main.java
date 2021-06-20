@@ -1,30 +1,16 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
-        // Switch Statement
-        String gender = "Female";
-        if (gender.equals("Male")) {
-
-        } else if (gender.equals("Prefer_Not_Say")) {
-
-        } else {
-
-        }
-
-        switch (gender.toUpperCase()){
-            case "Female":
-                System.out.println("I am a female");
-                break;
-            case "Male":
-                System.out.println("I am a male");
-                break;
-            case "Prefer_Not_Say":
-                System.out.println("Prefer not say");
-                break;
-            default:
-                System.out.println("Unknown Gender");
-        }
+        // Arrays
+        int [] numbers = {2, 0, 1};
+//        int [] numbers = new int[3];
+//        numbers[0] = 0;
+//        numbers[1] = 1;
+//        numbers[2] = 2;
+        System.out.println(Arrays.toString(numbers));
     }
 }
