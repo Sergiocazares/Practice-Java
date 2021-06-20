@@ -5,13 +5,16 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        // Arrays & Indexes
-        int [] numbers = {2, 0, 1, 4, 100, 78, 98};
-        int oneHundred = numbers[4];
-        int four = numbers[3];
-        int last = numbers[numbers.length - 1];
-        System.out.println(oneHundred);
-        System.out.println(four);
-        System.out.println(last);
+        // Loops
+        int [] numbers = {2, 0, 1, 4, 100, 4, 90, 78, 77};
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+
+        // Reverse Order
+        for (int i = numbers.length -1; i >= 0; i--) {
+            System.out.println(numbers[i]);
+        }
     }
 }
