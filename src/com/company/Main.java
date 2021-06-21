@@ -1,18 +1,20 @@
 package com.company;
 
+import java.time.LocalDateTime;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        // Do While Loop
-        int count = 0;
+        // Scanner
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String userName = scanner.nextLine();
+        System.out.println("Hello " + userName);
 
-        do {
-            System.out.println(count);
-            count++;
-        }
-        while (count <= 20);
-        while (true) {
-
-        }
+        System.out.println("How old are you?");
+        int age = scanner.nextInt();
+        int year = LocalDateTime.now().minusYears(age).getYear();
+        System.out.println("You were born in " + year);
     }
 }
