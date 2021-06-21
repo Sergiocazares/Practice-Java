@@ -4,10 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
         // Methods
-        System.out.println("Hello");
-        String brand = "Samsung";
-        System.out.println(brand.toUpperCase());
-        System.out.println(brand.startsWith("s"));
-
+        char[] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
+        int count = countOccurrences(letters);
+        System.out.println(count);
     }
+
+    public static int countOccurrences(char [] letters) {
+        System.out.println("method countOccurrences was invoked");
+        return -1;
+    }
+
 }
