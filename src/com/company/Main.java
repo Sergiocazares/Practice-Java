@@ -3,20 +3,19 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // User Defined Methods
-        char[] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
-        int count = countOccurrences(letters, 'N');
-        System.out.println(count);
+        // Classes and Objects
     }
 
-    public static int countOccurrences(char [] letters, char searchLetter) {
-        int count = 0;
-        for (char letter : letters) {
-            if (letter == searchLetter) {
-                count++;
-            }
+    static class Lens {
+        String brand;
+        String focalLength;
+        boolean isPrime;
+
+        Lens(String brand, String focalLength, boolean isPrime) {
+            this.brand = brand;
+            this.focalLength = focalLength;
+            this.isPrime = isPrime;
         }
-        return count;
     }
 
 }
