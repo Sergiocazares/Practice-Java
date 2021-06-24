@@ -6,7 +6,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        // Imperative Approach
         List<Person> people = List.of(
                 new Person("John", Person.Gender.MALE),
                 new Person("Maria", Person.Gender.FEMALE),
@@ -17,6 +16,7 @@ public class Main {
 
         List<Person> females = new ArrayList<>();
 
+        //Imperative Apporach
         for (Person person : people){
             if (Person.Gender.FEMALE.equals(person.gender)){
                 females.add(person);
