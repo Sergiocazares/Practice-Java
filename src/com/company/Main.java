@@ -38,6 +38,7 @@ public class Main {
             this.gender = gender;
         }
 
+        //Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes
         @Override
         public String toString(){
             return "Person{" + "name='" + name + '\'' + ", gender=" + gender + '}';
