@@ -43,6 +43,7 @@ public class Main {
             return "Person{" + "name='" + name + '\'' + ", gender=" + gender + '}';
         }
 
+        //An enum is a special "class" that represents a group of constants (unchangeable variables, like final variables)
         enum Gender {
             MALE, FEMALE
         }
