@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -12,8 +13,20 @@ public class Main {
                 new Person("Aisha", MALE),
                 new Person("Alex", MALE),
                 new Person("Alice", FEMALE)
-
         );
+
+        List<Person> females = new ArrayList<>();
+
+        for (Person person : people){
+            if (FEMALE.equals(person.gender)){
+                females.add(person);
+            }
+        }
+
+        for (Person female : females){
+            System.out.println(female);
+        }
+
     }
 
     static class Person {
