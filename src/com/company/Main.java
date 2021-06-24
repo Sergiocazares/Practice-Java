@@ -3,23 +3,22 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
-import static imperative.Main.Gender.*;
 public class Main {
 
     public static void main(String[] args) {
         // Imperative Approach
         List<Person> people = List.of(
-                new Person("John", MALE),
-                new Person("Maria", FEMALE),
-                new Person("Aisha", MALE),
-                new Person("Alex", MALE),
-                new Person("Alice", FEMALE)
+                new Person("John", Person.Gender.MALE),
+                new Person("Maria", Person.Gender.FEMALE),
+                new Person("Aisha", Person.Gender.MALE),
+                new Person("Alex", Person.Gender.MALE),
+                new Person("Alice", Person.Gender.FEMALE)
         );
 
         List<Person> females = new ArrayList<>();
 
         for (Person person : people){
-            if (FEMALE.equals(person.gender)){
+            if (Person.Gender.FEMALE.equals(person.gender)){
                 females.add(person);
             }
         }
