@@ -3,6 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
+import static imperative.Main.Gender.*;
 public class Main {
 
     public static void main(String[] args) {
